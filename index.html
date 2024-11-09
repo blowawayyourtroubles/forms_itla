@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="/form/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h3>German Gibbs</h3>
+    </header>
+    <main>
+      <h1>Formulario de Inscripción a Competencia Escolar</h1>
+      <p>
+        Usa este formulario de Inscripcion a Competencia Escolar para expresar
+        tu intencion de participar en la competencia que sea de tu interes. Los
+        organizadores te contactaran para confirmar tu participacion y para
+        responder tus preguntas, si es que tienes alguna.
+      </p>
+
+      <p>
+        Por favor, confirma tu intencion de participar en una competencia
+        escolar mediante la colocacion de tu firma en el formulario.
+      </p>
+      <div class="area-personal">
+        <form action="">
+        <label for="nombre">Nombre completo<span>*</span>:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="curso">Curso/Grado<span>*</span>:</label>
+        <input type="number" id="curso" name="curso" min="1" max="8" required />
+
+        <label for="fechaNacimiento" id="fechaNacimiento"
+          >Fecha de nacimiento<span>*</span>:</label
+        >
+        <input
+          type="date"
+          id="fechaNacimiento"
+          name="fechaNacimiento"
+          required
+        />
+      </div>
+      <p>
+        Por favor, confirma tu intencion de participar en una competencia
+        escolar mediante la colocacion de tu firma en el formulario.
+      </p>
+   
+        <table>
+          <tr>
+            <td
+              
+              rowspan="2"
+              
+            >
+             <label for="">Competicion en la que quieres participar<span>*</span>:
+             </label>             </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="deportes" /> Atletismo<br />
+
+              <input type="radio" name="deportes" /> Deletreo <br />
+
+              <input type="radio" name="deportes" /> Olimpiadas de matematicas
+              <br />
+
+              <input type="radio" name="deportes" /> Arte
+            </td>
+          </tr>
+        </table>
+        <label for="docente"
+        >Docente que te prepara para la competicion<span>*</span>:</label
+      >
+
+      <select id="docente" name="docente" required>
+        <option value="#">Selectione un Docente</option>
+        <option value="Jorge">Jorge</option>
+        <option value="Daniela">Daniela</option>
+        <option value="Miguel">Miguel</option>
+        <option value="Maria">Maria</option>
+      </select>
+
+      <label for="telefono"
+        >Teléfono al que puedes ser contactado<span>*</span>:</label
+      >
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <label for="personadecontacto">Persona de contacto<span>*</span>:</label>
+      <input type="text" required />
+      <label for="telefono"
+        >Teléfono de persona de contacto<span>*</span>:</label
+      >
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      /><br>
+      <table>
+        <tr>
+      <td rowspan="2"><label for="comentario">¿Tienes alguna pregunta para los organizadores?</label></td>
+    </tr>
+    <tr>
+      <td>
+      <textarea name="" id="" rows="10" cols="40"></textarea><br>
+      
+    </td>
+    
+    </tr>
+
+    <tr><td><input type="submit" value="Enviar" /></td></tr>
+    
+    </table>
+    </form>
+    </main>
+  </body>
+</html>
